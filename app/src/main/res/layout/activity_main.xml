@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.droidrank.sample.MainActivity">
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/magic_square" />
+
+    <EditText
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/number_hint" />
+
+    <Button
+        android:textColor="@color/colorPrimaryDark"
+        android:textAllCaps="false"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_number"
+        android:id="@+id/btn_execute"
+        android:onClick="execute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/execute" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_execute"
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+</RelativeLayout>
